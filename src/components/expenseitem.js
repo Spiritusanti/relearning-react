@@ -1,13 +1,12 @@
-import React from "react";
 import "./expenseitem.style.css";
 
 const ExpenseItem = () => {
   return (
-    <div className="expense_item--container">
+    <div className="expense-item">
       <div>March 30th 2021</div>
-      <div>
+      <div className="expense-item__description">
         <h2>Car Insurance</h2>
-        <div>$265.98</div>
+        <div className="expense-item__price">$265.98</div>
       </div>
     </div>
   );
