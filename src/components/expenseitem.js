@@ -1,12 +1,15 @@
 import "./expenseitem.style.css";
+import ExpenseDate from './expenseDate';
 
-const ExpenseItem = () => {
+const ExpenseItem = (props) => {
+  const { date, title, amount } = props;
+  console.log(date, title, amount);
   return (
     <div className="expense-item">
-      <div>March 30th 2021</div>
+      <ExpenseDate date={date}/>
       <div className="expense-item__description">
-        <h2>Car Insurance</h2>
-        <div className="expense-item__price">$265.98</div>
+        <h2>{title}</h2>
+        <div className="expense-item__price">{`$${amount}`}</div>
       </div>
     </div>
   );
