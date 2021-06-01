@@ -6,9 +6,9 @@ import Card from "../UI/card";
 const ExpenseItem = (props) => {
   const [state, setstate] = useState(props);
 
-  const clickHandler = () => {
-    setstate({ date: state.date, title: "HamaKabula!", amount: state.amount });
-  };
+  // const clickHandler = () => {
+  //   setstate({ date: state.date, title: "HamaKabula!", amount: state.amount });
+  // };
 
   return (
     <li>
@@ -18,7 +18,7 @@ const ExpenseItem = (props) => {
           <h2>{state.title}</h2>
           <div className="expense-item__price">{`$${state.amount}`}</div>
         </div>
-        <button onClick={clickHandler}>Change Title</button>
+        {/*<button onClick={clickHandler}>Change Title</button> */}
       </Card>
     </li>
   );
